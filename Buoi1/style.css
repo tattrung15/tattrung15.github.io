@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body{
+	background: #F1F1F1;
+}
+
+b{
+	font-size: 1.2rem;
+}
+
+.font{
+	font-family: 'Roboto', sans-serif;
+}
+
+.content{
+	max-width: 1400px;
+}
+
+.w-90{
+	width: 90%;
+}
+
+.bg-progress{
+	background: #F1F1F1;
+}

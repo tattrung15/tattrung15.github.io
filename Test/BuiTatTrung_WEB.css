@@ -1,0 +1,139 @@
+body{
+    background: url('https://i.pinimg.com/originals/ec/6b/2b/ec6b2b877f7a20be4ab082f317fd8a3d.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.menu{
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: white;
+    box-shadow: 0px 0px 15px black;
+}
+
+.menu ul{
+    margin-top: 20px;
+    text-align: right;
+    margin-right: 20px;
+    list-style-type: none;
+}
+
+.menu ul li{
+    display: inline-block;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+.menu ul li:hover{
+    background: cyan;
+}
+
+.hide{
+    width: 100%;
+    height: 500px;
+}
+
+.content{
+    width: 100%;
+    background: white;
+    position: relative;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    background: url('https://genknews.genkcdn.vn/2018/12/10/3260739408bd888d2dc9b611f35af672-1544414276519470629002.jpg');
+    background-size: cover;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: -80px;
+    left: 47%;
+    z-index: 2;
+}
+
+hr{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.content-1{
+    width: 75%;
+    margin: 50px auto;
+    display: flex;
+}
+
+.content-1 .pic1{
+    background: url('https://i.pinimg.com/474x/33/44/f7/3344f7435d4fe7001870bb23dbf07b94.jpg');
+    width: 50%;
+    height: 600px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.content-1 .text1{
+    text-align: center;
+    width: 50%;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+
+.content-2{
+    width: 75%;
+    margin: 50px auto;
+    display: flex;
+}
+
+.content-2 .pic2{
+    background: url('https://image.winudf.com/v2/image/Y29tLmZ1bGxlaGRmb3JrYWFuaW1lLmFuaW1lY2hpbmVjYXRfc2NyZWVuXzBfMTUzMTI2NTAyNF8wOTk/screen-0.jpg?fakeurl=1&type=.jpg');
+    width: 50%;
+    height: 600px;
+    background-size: cover;
+    border-radius: 20px;
+    order: 2;
+}
+
+.content-2 .text2{
+    text-align: center;
+    width: 50%;
+    margin-right: 70px;
+    margin-top: 50px;
+    order: 1;
+}
+
+.footer{
+    width: 100%;
+    height: 100px;
+    background: black;
+}
+
+.footer p{
+    color: white;
+    line-height: 100px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.footer p span{
+    color: orange;
+}

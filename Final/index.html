@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Android Developers</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
+		integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"
+		integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-white">
+		<a href=""><img
+				src="https://www.gstatic.com/devrel-devsite/prod/v9d570efc814a28024c8ff149d6de123f7f820fa81162ad936a6bcae349b1b74d/android/images/lockup.svg"
+				alt=""></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+			aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarTogglerDemo02" style="width: 60%;">
+			<ul class="navbar-nav mr-auto ml-4 mt-2 mt-lg-0">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Platform</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Android Studio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Google Play</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Jetpack</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Kotlin</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Docs</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">News</a>
+				</li>
+			</ul>
+			<div class="row" style="width: 35%;">
+				<div class="col-md-6 col-xl-7 text-right">
+					<div class="lang text-right">
+						<span class="menu-lang">LANGUAGE <i class="fa fa-arrow-down"></i>
+							<ul>
+								<li>English</li>
+								<li>Brasil</li>
+								<li>Deutsch</li>
+								<li>Tiếng Việt</li>
+							</ul>
+						</span>
+					</div>
+				</div>
+				<div class="col-md-6 col-xl-5 text-right">
+					<a href="#" class="login text-primary">ĐĂNG NHẬP</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="container-fluid mt-5 pt-5 header">
+		<h1 class="text">Build anything on Android</h1>
+		<div class="search pt-5 pb-5">
+			<i class="fa fa-search"></i><input type="text" placeholder="Tìm kiếm" style="width: 100%;">
+		</div>
+	</div>
+	<div class="container-fluid p-4 pl-5" style="z-index: 1; background: #E1F5FE; font-size: 14px;">
+		The Android Developer Challenge is back! <span
+			style="text-decoration: underline; color: #039BE5; cursor: pointer;">Submit your idea before December
+			2.</span>
+	</div>
+	<div class="container-fluid mt-5 p-5">
+		<div class="row p-4">
+			<div class="col-md-6 col-sm-12">
+				<p style="letter-spacing: 4px;">FEATURED</p>
+				<h3>Android Developer Challenge: submit your idea by December 2!</h3>
+				<p>Helpful innovation, powered by On-Device Machine Learning + you: we're bringing back the Android
+					Developer Challenge and asking you to help us unlock new experiences on Android. Submit your idea by
+					December 2!</p>
+				<button type="button" class="btn btn-outline-success font-weight-bolder p-3"
+					style="border: 2px solid green;">SUBMIT YOUR IDEA</button>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<img src="https://developer.android.com/images/home/android-adc-hero-illustration.png" alt=""
+					style="width: 500px; height: 300px">
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid mt-5">
+		<div class="row p-4">
+			<div class="col-md-6 col-sm-12 pad-r">
+				<div class="feature row">
+					<div class="col-lg-8 p-4">
+						<p style="letter-spacing: 4px;">FEATURED</p>
+						<h4><a href="" style="color: black; font-size: smaller;">Android Dev Summit Sessions & more!</a>
+						</h4>
+						<div>Android's modern toolkit for building beautiful, native UI.</div>
+						<div class="mt-5 pt-4"><a class="sub-idea" href="" style="font-weight: bold;">WATCH NOW</a>
+						</div>
+					</div>
+					<div class="col-lg-4 pt-5">
+						<div class="text-center"><img
+								src="https://developer.android.com/images/home/home-featured-learn-compose.svg" alt=""
+								style="width: 130px; height: 130px;"></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12 pad-l">
+				<div class="feature row">
+					<div class="col-lg-8 p-4">
+						<p style="letter-spacing: 4px;">FEATURED</p>
+						<h4><a href="" style="color: black;">Get to know Jetpack Compose</a></h4>
+						<div>Android's modern toolkit for building beautiful, native UI.</div>
+						<div class="mt-5 pt-4"><a class="sub-idea" href="" style="font-weight: bold;">LEARN MORE</a>
+						</div>
+					</div>
+					<div class="col-lg-4 pt-5">
+						<div class="text-center"><img
+								src="https://developer.android.com/images/home/home-featured-learn-compose.svg" alt=""
+								style="width: 130px; height: 130px;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid mt-5 pt-5 start">
+		<div class="row p-4">
+			<div class="col-md-6 col-sm-12 ">
+				<div>
+					<h1>Start building an app</h1>
+					<p>Whether you’re an experienced developer or creating your first Android app, here are some
+						resources to get you started.</p>
+				</div>
+				<div class="android-studio mt-5" style="background: #455A64;">
+					<div class="pic">
+						<img src="https://developer.android.com/studio/images/home/android-studio-logo-invert.svg"
+							alt="">
+					</div>
+					<div class="nut">
+						<a href="">DOWNLOAD</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12 dev-gui">
+				<div class="p-4" style="background: white;">
+					<h3>Developer guides</h3>
+					<p>Here you'll find a wide range of documentation that teaches you how to build an app, including
+						how to build your first Android app, how to build layouts that adapt to different screens, how
+						to save data in a local database, how to use device sensors and cameras, and much more.</p>
+					<div class="mt-4 pt-5"><a class="sub-idea" href="" style="font-weight: bold;">GET STARTED</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid pt-5 start">
+		<div class="row p-4">
+			<div class="col-xl-3 col-lg-6 col-md-6 p-3">
+				<div style="background: white;">
+					<div class="p-4">
+						<img src="https://developer.android.com/images/home/guides-samples.svg" alt=""
+							style="width: 80px; height: 80px;">
+						<h4 class="mt-3"><a href="" style="color: black;">Sample code</a></h4>
+						<p>Jump-start your development using these sample projects</p>
+						<div class="mt-5 pt-4"><a class="sub-idea" href="" style="font-weight: bold;">SEE THE
+								SAMPLES</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-3 col-lg-6 col-md-6 p-3">
+				<div style="background: white;">
+					<div class="p-4">
+						<img src="https://developer.android.com/images/home/testing-your-app.svg" alt=""
+							style="width: 80px; height: 80px;">
+						<h4 class="mt-3"><a href="" style="color: black;">Test your app</a></h4>
+						<p>Verify your app’s behavior and usability before you release</p>
+						<div class="mt-5 pt-4"><a class="sub-idea" href="" style="font-weight: bold;">LEARN HOW TO
+								TEST</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-3 col-lg-6 col-md-6 p-3">
+				<div style="background: white;">
+					<div class="p-4">
+						<img src="https://developer.android.com/images/home/material-design.svg" alt=""
+							style="width: 80px; height: 80px;">
+						<h4 class="mt-3"><a href="" style="color: black;">Quality guidelines</a></h4>
+						<p>Build a high quality app with these design and behavior guidelines</p>
+						<div class="mt-5 pt-4"><a class="sub-idea" href="" style="font-weight: bold;">SEE THE
+								GUIDELINES</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-3 col-lg-6 col-md-6 p-3">
+				<div style="background: white;">
+					<div class="p-4">
+						<img src="https://developer.android.com/images/home/distribute-play.svg" alt=""
+							style="width: 80px; height: 80px;">
+						<h4 class="mt-3"><a href="" style="color: black;">Distribute on Google Play</a></h4>
+						<p>Reach a global audience and earn revenue</p>
+						<div class="mt-5 pt-4"><a class="sub-idea" href="" style="font-weight: bold;">LEARN ABOUT
+								PLAY</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<h1 class="text-center mt-5">Get started with</h1>
+		<div class="p-4">
+			<div class="row p-3" style="background: #455A64; color: white;">
+				<div class="col-md-6 col-sm-12">
+					<div><span style="font-size: larger;">DOCS</span></div>
+					<h4 class="mt-4 mb-4"><a href="" style="color: white;">Android Developer Challenge: submit your idea
+							by December 2!</a></h4>
+					<p>Helpful innovation, powered by On-Device Machine Learning + you: we're bringing back the Android
+						Developer Challenge and asking you to help us unlock new experiences on Android. Submit your
+						idea by December 2!</p>
+					<div class="mt-5 pt-5"><a class="sub-idea2" href="" style="font-weight: bold;">DESIGN FOR
+							ANDROID</a></div>
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<img src="https://developer.android.com/images/home/design-illustration.svg" alt=""
+						style="width: 100%; height: 300px">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row p-4">
+			<div class="col-xl-4 col-lg-4 col-md-12 p-3">
+				<div style="background: #F7F9FA;">
+					<div class="p-4">
+						<div><span>PLATFORM</span></div>
+						<h2><a href="" style="color: black;">Wear OS</a></h2>
+						<div><img src="https://developer.android.com/images/home/wear-green.svg" alt=""></div>
+						<div class="mt-5 pt-4"><a class="sub-idea" href="" style="font-weight: bold;">LEARN MORE</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-4 col-lg-4 col-md-12 p-3">
+				<div style="background: #F7F9FA;">
+					<div class="p-4">
+						<div><span>PLATFORM</span></div>
+						<h2><a href="" style="color: black;">TV</a></h2>
+						<div><img src="https://developer.android.com/images/home/tv-green.svg" alt=""></div>
+						<div class="mt-5 pt-4"><a class="sub-idea" href="" style="font-weight: bold;">LEARN MORE</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-4 col-lg-4 col-md-12 p-3">
+				<div style="background: #F7F9FA;">
+					<div class="p-4">
+						<div><span>PLATFORM</span></div>
+						<h2><a href="" style="color: black;">Cars</a></h2>
+						<div><img src="https://developer.android.com/images/home/auto-green.svg" alt=""></div>
+						<div class="mt-5 pt-4"><a class="sub-idea" href="" style="font-weight: bold;">LEARN MORE</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row p-4">
+			<div class="col-xl-4 col-lg-4 col-md-12 p-3">
+				<div style="background: #F7F9FA;">
+					<div class="p-4">
+						<div><span>PLATFORM</span></div>
+						<h2><a href="" style="color: black;">Chrome OS</a></h2>
+						<div><img src="https://developer.android.com/images/home/chrome-green.svg" alt=""></div>
+						<div class="mt-5 pt-4"><a class="sub-idea" href="" style="font-weight: bold;">LEARN MORE</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-4 col-lg-4 col-md-12 p-3">
+				<div style="background: #F7F9FA;">
+					<div class="p-4">
+						<div><span>PLATFORM</span></div>
+						<h2><a href="" style="color: black;">Things</a></h2>
+						<div><img src="https://developer.android.com/images/home/things-green.svg" alt=""></div>
+						<div class="mt-5 pt-4"><a class="sub-idea" href="" style="font-weight: bold;">LEARN MORE</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-4 col-lg-4 col-md-12 p-3">
+				<div style="background: #F7F9FA;">
+					<div class="p-4">
+						<div><span>PLATFORM</span></div>
+						<h2><a href="" style="color: black;">Android NDK</a></h2>
+						<div><img src="https://developer.android.com/images/home/ndk-green.svg" alt=""></div>
+						<div class="mt-5 pt-4"><a class="sub-idea" href="" style="font-weight: bold;">LEARN MORE</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid mt-5 p-5">
+		<div class="row p-4" style="background: #F7F9FA;">
+			<div class="col-md-6 col-sm-12">
+				<div><span>DOCS</span></div>
+				<h3 class="mt-3">Google services for Android</h3>
+				<p class="mt-3">Take advantage of the latest Google technologies through a single set of APIs for
+					Android, delivered across Android devices worldwide as part of Google Play services. <br><br>
+					Start by setting up the Google Play services library, then build with the APIs for services such as
+					Google Maps, Firebase, Google Cast, Google AdMob, and much more.</p>
+				<div class="mt-5">
+					<button type="button" class="btn btn-outline-success font-weight-bolder p-3"
+						style="border: 2px solid green;">GET STARTED</button>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<img src="https://developer.android.com/images/home/google-services-for-android-asset.svg" alt=""
+					style="width: 100%; height: 100%">
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<h1 class="text-center mt-4">Latest news</h1>
+		<div class="row p-4">
+			<div class="col-xl-4 col-lg-4 col-md-12 p-3">
+				<div style="background: #F7F9FA;">
+					<div class="row">
+						<div class="col-lg-12 col-md-6 news1">
+							<img src="https://1.bp.blogspot.com/-qRY8km9Bbfk/XbHTy6vFYAI/AAAAAAAAMuo/8FCXRRg7Mw4gUexBjsMtrDlH0nuJ52dCQCLcBGAsYHQ/s1600/notebook.gif"
+								alt="" style="width: 100%; height: 200px;">
+						</div>
+						<div class="col-lg-12 col-md-6 news2">
+							<div class="p-4">
+								<div><span>BLOG</span></div>
+								<h4 class="mt-3"><a href="" style="color: black;">A modern approach to Android
+										development, with Jetpack Compose and more!</a></h4>
+								<p class="mt-3">Modern Android Development today Perhaps as a consequence of Android's
+									flexibility, we often get asked by developers what does the Android team recommend
+								</p>
+								<div class="row mt-5">
+									<div class="col-2">
+										<img src="https://developer.android.com/images/branding/icons/android-blog-round-icon.svg"
+											alt="" style="width: 40px; height: 40px;">
+									</div>
+									<div class="col-10" style="font-size: x-small;">
+										<p>Android Developers</p>
+										<p>25 tháng 10, 2019</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-4 col-lg-4 col-md-12 p-3">
+				<div style="background: #F7F9FA;">
+					<div class="row">
+						<div class="col-lg-12 col-md-6 news1">
+							<img src="https://2.bp.blogspot.com/-jcls60Ua_RA/XbB-FN8DhEI/AAAAAAAAMuQ/iAe5pgwnEYUCWHDE8BzEvbGLadiwt5f0wCLcBGAsYHQ/s1600/Keynote_Blog_FINAL.png"
+								alt="" style="width: 100%; height: 200px;">
+						</div>
+						<div class="col-lg-12 col-md-6 news2">
+							<div class="p-4">
+								<div><span>BLOG</span></div>
+								<h4 class="mt-3"><a href="" style="color: black;">A modern approach to Android
+										development, with Jetpack Compose and more!</a></h4>
+								<p class="mt-3">Modern Android Development today Perhaps as a consequence of Android's
+									flexibility, we often get asked by developers what does the Android team recommend
+								</p>
+								<div class="row mt-5">
+									<div class="col-2">
+										<img src="https://developer.android.com/images/branding/icons/android-blog-round-icon.svg"
+											alt="" style="width: 40px; height: 40px;">
+									</div>
+									<div class="col-10" style="font-size: x-small;">
+										<p>Android Developers</p>
+										<p>24 tháng 10, 2019</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-4 col-lg-4 col-md-12 p-3">
+				<div style="background: #F7F9FA;">
+					<div class="row">
+						<div class="col-lg-12 col-md-6 news1">
+							<img src="https://www.gstatic.com/devrel-devsite/prod/v9d570efc814a28024c8ff149d6de123f7f820fa81162ad936a6bcae349b1b74d/android/images/dynamic-content-card-default.jpg"
+								alt="" style="width: 100%; height: 200px;">
+						</div>
+						<div class="col-lg-12 col-md-6 news2">
+							<div class="p-4">
+								<div><span>BLOG</span></div>
+								<h4 class="mt-3"><a href="" style="color: black;">A modern approach to Android
+										development, with Jetpack Compose and more!</a></h4>
+								<p class="mt-3">Modern Android Development today Perhaps as a consequence of Android's
+									flexibility, we often get asked by developers what does the Android team recommend
+								</p>
+								<div class="row mt-5">
+									<div class="col-2">
+										<img src="https://developer.android.com/images/branding/icons/android-blog-round-icon.svg"
+											alt="" style="width: 40px; height: 40px;">
+									</div>
+									<div class="col-10" style="font-size: x-small;">
+										<p>Android Developers</p>
+										<p>25 tháng 10, 2019</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row p-4">
+			<div class="col-xl-4 col-lg-4 col-md-12 p-3">
+				<div style="background: #F7F9FA;">
+					<div class="row">
+						<div class="col-lg-12 col-md-6 news1">
+							<img src="https://1.bp.blogspot.com/-tIyxjQllyj0/Xa5FU_-EWgI/AAAAAAAAMtg/3E29CgGOvjI2WSVsPQZYPL_8PUNFOrS4gCLcBGAsYHQ/s1600/pasted%2Bimage%2B0.png"
+								alt="" style="width: 100%; height: 200px;">
+						</div>
+						<div class="col-lg-12 col-md-6 news2">
+							<div class="p-4">
+								<div><span>BLOG</span></div>
+								<h4 class="mt-3"><a href="" style="color: black;">A modern approach to Android
+										development, with Jetpack Compose and more!</a></h4>
+								<p class="mt-3">Modern Android Development today Perhaps as a consequence of Android's
+									flexibility, we often get asked by developers what does the Android team recommend
+								</p>
+								<div class="row mt-5">
+									<div class="col-2">
+										<img src="https://developer.android.com/images/branding/icons/android-blog-round-icon.svg"
+											alt="" style="width: 40px; height: 40px;">
+									</div>
+									<div class="col-10" style="font-size: x-small;">
+										<p>Android Developers</p>
+										<p>25 tháng 10, 2019</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-4 col-lg-4 col-md-12 p-3">
+				<div style="background: #F7F9FA;">
+					<div class="row">
+						<div class="col-lg-12 col-md-6 news1">
+							<img src="https://3.bp.blogspot.com/-PxyYlKYoURk/Xa5ARPOhNyI/AAAAAAAAMs4/ZsZiTIvursYdwzdNcMKGcdmfWX0sCOwUgCLcBGAsYHQ/s1600/image1.png"
+								alt="" style="width: 100%; height: 200px;">
+						</div>
+						<div class="col-lg-12 col-md-6 news2">
+							<div class="p-4">
+								<div><span>BLOG</span></div>
+								<h4 class="mt-3"><a href="" style="color: black;">A modern approach to Android
+										development, with Jetpack Compose and more!</a></h4>
+								<p class="mt-3">Modern Android Development today Perhaps as a consequence of Android's
+									flexibility, we often get asked by developers what does the Android team recommend
+								</p>
+								<div class="row mt-5">
+									<div class="col-2">
+										<img src="https://developer.android.com/images/branding/icons/android-blog-round-icon.svg"
+											alt="" style="width: 40px; height: 40px;">
+									</div>
+									<div class="col-10" style="font-size: x-small;">
+										<p>Android Developers</p>
+										<p>24 tháng 10, 2019</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-4 col-lg-4 col-md-12 p-3">
+				<div style="background: #F7F9FA;">
+					<div class="row">
+						<div class="col-lg-12 col-md-6 news1">
+							<img src="https://3.bp.blogspot.com/-E_61ZBmBlwo/XaeWvxlFvWI/AAAAAAAAMqQ/7Zc_eiWh25kznrDFwwpEvHvRHSby-P2XwCLcBGAsYHQ/s1600/Introducing_LTS_Android_NDK_r21.png"
+								alt="" style="width: 100%; height: 200px;">
+						</div>
+						<div class="col-lg-12 col-md-6 news2">
+							<div class="p-4">
+								<div><span>BLOG</span></div>
+								<h4 class="mt-3"><a href="" style="color: black;">A modern approach to Android
+										development, with Jetpack Compose and more!</a></h4>
+								<p class="mt-3">Modern Android Development today Perhaps as a consequence of Android's
+									flexibility, we often get asked by developers what does the Android team recommend
+								</p>
+								<div class="row mt-5">
+									<div class="col-2">
+										<img src="https://developer.android.com/images/branding/icons/android-blog-round-icon.svg"
+											alt="" style="width: 40px; height: 40px;">
+									</div>
+									<div class="col-10" style="font-size: x-small;">
+										<p>Android Developers</p>
+										<p>25 tháng 10, 2019</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pl-4">
+			<div class="pl-4"><a class="sub-idea" href="" style="font-weight: bold; text-decoration: none;">MORE
+					NEWS</a>
+			</div>
+		</div>
+		<h1 class="text-center mt-5">Latest videos</h1>
+		<div class="row p-4">
+			<div class="col-xl-4 col-lg-4 col-md-12 p-3">
+				<div style="background: #F7F9FA;">
+					<div class="row">
+						<div class="col-lg-12 col-md-6 news1">
+							<img src="https://i.ytimg.com/vi/c_g-hof5N2I/maxresdefault.jpg" alt=""
+								style="width: 100%; height: 200px;">
+						</div>
+						<div class="col-lg-12 col-md-6 news2">
+							<div class="p-4">
+								<div><span>YOUTUBE</span></div>
+								<h4 class="mt-3"><a href="" style="color: black;">SMS Verification Codes Made Easy on
+										Android V2!</a></h4>
+								<p class="mt-3">Use the SMS verification code feature to prompt your user to share a
+									single SMS message containing a one-time code. This allows your app to do SMS
+									verification
+								</p>
+								<div class="row mt-5">
+									<div class="col-2">
+										<img src="https://www.gstatic.com/devrel-devsite/prod/v9d570efc814a28024c8ff149d6de123f7f820fa81162ad936a6bcae349b1b74d/android/images/custom/youtube-round-icon.svg"
+											alt="" style="width: 40px; height: 40px;">
+									</div>
+									<div class="col-10" style="font-size: x-small;">
+										<p>Android Developers</p>
+										<p>11 tháng 10, 2019</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-4 col-lg-4 col-md-12 p-3">
+				<div style="background: #F7F9FA;">
+					<div class="row">
+						<div class="col-lg-12 col-md-6 news1">
+							<img src="https://i.ytimg.com/vi/_-Hs6DdcZyY/maxresdefault.jpg" alt=""
+								style="width: 100%; height: 200px;">
+						</div>
+						<div class="col-lg-12 col-md-6 news2">
+							<div class="p-4">
+								<div><span>YOUTUBE</span></div>
+								<h4 class="mt-3"><a href="" style="color: black;">SMS Verification Codes Made Easy on
+										Android V2!</a></h4>
+								<p class="mt-3">Use the SMS verification code feature to prompt your user to share a
+									single SMS message containing a one-time code. This allows your app to do SMS
+									verification
+								</p>
+								<div class="row mt-5">
+									<div class="col-2">
+										<img src="https://www.gstatic.com/devrel-devsite/prod/v9d570efc814a28024c8ff149d6de123f7f820fa81162ad936a6bcae349b1b74d/android/images/custom/youtube-round-icon.svg"
+											alt="" style="width: 40px; height: 40px;">
+									</div>
+									<div class="col-10" style="font-size: x-small;">
+										<p>Android Developers</p>
+										<p>6 tháng 8, 2019</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-4 col-lg-4 col-md-12 p-3">
+				<div style="background: #F7F9FA;">
+					<div class="row">
+						<div class="col-lg-12 col-md-6 news1">
+							<img src="https://i.ytimg.com/vi/BYzv9k31s8o/maxresdefault.jpg" alt=""
+								style="width: 100%; height: 200px;">
+						</div>
+						<div class="col-lg-12 col-md-6 news2">
+							<div class="p-4">
+								<div><span>YOUTUBE</span></div>
+								<h4 class="mt-3"><a href="" style="color: black;">SMS Verification Codes Made Easy on
+										Android V2!</a></h4>
+								<p class="mt-3">Use the SMS verification code feature to prompt your user to share a
+									single SMS message containing a one-time code. This allows your app to do SMS
+									verification
+								</p>
+								<div class="row mt-5">
+									<div class="col-2">
+										<img src="https://www.gstatic.com/devrel-devsite/prod/v9d570efc814a28024c8ff149d6de123f7f820fa81162ad936a6bcae349b1b74d/android/images/custom/youtube-round-icon.svg"
+											alt="" style="width: 40px; height: 40px;">
+									</div>
+									<div class="col-10" style="font-size: x-small;">
+										<p>Android Developers</p>
+										<p>1 tháng 8, 2019</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pl-4">
+			<div class="pl-4"><a class="sub-idea" href="" style="font-weight: bold; text-decoration: none;">MORE
+					VIDEO</a>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<div class="container-fluid mt-5">
+		<hr>
+		<div class="row p-4">
+			<div class="col-md-6 col-sm-12 text-center">
+				<div class="twitter">
+					<a href="https://twitter.com/"><i class="fab fa-twitter" style="font-size: 48px;"></i><br>
+						<span style="font-weight: bold; color: black;">Twitter</span></a> <br>
+					Theo dõi @AndroidDev <br>
+					trên Twitter
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12 text-center">
+				<div class="youtube">
+					<a href="https://www.youtube.com/"><i class="fab fa-youtube" style="font-size: 48px;"></i><br>
+						<span style="font-weight: bold; color: black;">Youtube</span></a> <br>
+					Xem Android Developers trên<br>
+					YouTube
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="row p-4">
+			<div class="col-md-4 col-sm-12">
+				<h3 style="font-size: 16px; font-weight: bold;">Tìm hiểu thêm về Android</h3>
+				<div class="footer-list">
+					<ul>
+						<li><a href="">Android</a></li>
+						<li><a href="">Enterprise</a></li>
+						<li><a href="">Bảo mật</a></li>
+						<li><a href="">Source</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-12">
+				<h3 style="font-size: 16px; font-weight: bold;">Hỗ trợ</h3>
+				<div class="footer-list">
+					<ul>
+						<li><a href="">Báo cáo lỗi nền tảng</a></li>
+						<li><a href="">Báo cáo lỗi tài liệu</a></li>
+						<li><a href="">Google play support</a></li>
+						<li><a href="">Tham gia nghiên cứu</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-12">
+				<h3 style="font-size: 16px; font-weight: bold;">Tài liệu</h3>
+				<div class="footer-list">
+					<ul>
+						<li><a href="">Hướng dẫn cho nhà phát triển</a></li>
+						<li><a href="">Hướng dẫn thiết kế</a></li>
+						<li><a href="">Tham chiếu API</a></li>
+						<li><a href="">Mẫu</a></li>
+						<li><a href="">Android Studio</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="row p-1">
+			<div class="logo col-lg-2 col-md-12 pl-4">
+				<img src="https://www.gstatic.com/devrel-devsite/prod/v9d570efc814a28024c8ff149d6de123f7f820fa81162ad936a6bcae349b1b74d/developers/images/lockup.svg?dcb_=0.69559255947873"
+					alt="" style="height: 32px; width: 185px;">
+			</div>
+			<div class="col-lg-10 col-md-12 menu-footer">
+				<ul>
+					<li><a href="">Android</a></li>
+					<li><a href="">Chrome</a></li>
+					<li><a href="">Firebase</a></li>
+					<li><a href="">Google Cloud Platform</a></li>
+					<li><a href="">Tất cả sản phẩm</a></li>
+				</ul>
+			</div>
+		</div>
+		<hr>
+		<div class="row pb-4">
+			<div class="col-lg-5 col-md-12 col-sm-12 menu-footer2">
+				<ul style="margin: 0;">
+					<li><a href="">Quyền riêng tư</a></li>|
+					<li><a href="">Giấy phép</a></li>|
+					<li><a href="">Nguyên tắc về thương hiệu</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-7 col-md-12 col-sm-12 text-right">
+				<div style="line-height: 40px;"><span class="pl-5">Xem tin tức và các mẹo qua email</span>
+					<button type="button" class="btn btn-primary">Đăng kí</button>
+					<select name="" class="lang-footer" style="padding: 10px 16px; outline: 0;">
+						<option>English</option>
+						<option>Brasil</option>
+						<option>Deutsch</option>
+						<option>Tiếng Việt</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

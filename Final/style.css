@@ -248,6 +248,7 @@ nav a > img{
 
 .lang-footer:hover{
     background: rgb(189, 189, 189);
+    cursor: pointer;
 }
 
 

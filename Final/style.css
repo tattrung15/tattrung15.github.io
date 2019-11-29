@@ -39,6 +39,10 @@ nav a > img{
     text-decoration: none;
 }
 
+.login-header{
+    width: 35%;
+}
+
 .menu-lang{
     position: relative;
     cursor: pointer;
@@ -61,6 +65,7 @@ nav a > img{
     box-shadow: 0 0 5px gray;
     display: none;
     border-radius: 3px;
+    z-index: 9;
 }
 
 .menu-lang ul li{
@@ -300,6 +305,9 @@ nav a > img{
     .menu-footer ul{
         margin-left: 0;
     }
+    .login-header{
+        width: 100%;
+    }
 }
 
 @media(max-width: 767px){
@@ -320,5 +328,8 @@ nav a > img{
     }
     .menu-footer ul li{
         display: block;
+    }
+    .login-btn{
+        margin-top: 10px;
     }
 }

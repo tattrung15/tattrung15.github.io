@@ -141,7 +141,26 @@ nav a > img{
     color: rgb(95, 95, 95);
 }
 
+.table td{
+    vertical-align: middle;
+    font-size: 14px;
+}
 
+tbody{
+    overflow: auto;
+}
+
+.btn-down{
+    padding: 4px 8px;
+    background: #F8F9FA;
+    color: #039BE5;
+    border: none;
+    font-weight: bold;
+}
+
+.btn-down:hover{
+    background: #E1F3FC;
+}
 
 
 @media(max-width: 1240px){
@@ -163,10 +182,22 @@ nav a > img{
     .login-header{
         width: 100%;
     }
+    .news1{
+        order: 2;
+    }
+    .news2{
+        order: 1;
+    }
 }
 
 @media(max-width: 767px){
     .login-btn{
         margin-top: 10px;
+    }
+    .news1{
+        order: 1;
+    }
+    .news2{
+        order: 2;
     }
 }

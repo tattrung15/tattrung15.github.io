@@ -312,10 +312,11 @@ nav a > img{
 
 @media(max-width: 767px){
     .pad-r{
-        padding-right: 1rem;
+        padding-right: 1rem !important;
     }
     .pad-l{
-        padding-left: 1rem;
+        padding-left: 1rem !important;
+        display: block !important;
     }
     .dev-gui{
         margin-top: 1em;

@@ -278,4 +278,7 @@ tbody{
     .menu-footer ul li{
         display: block;
     }
+    .col-lg-3.col-md-6.col-sm-12.p-3.d-flex{
+        display: block !important;
+    }
 }

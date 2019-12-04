@@ -118,6 +118,10 @@ nav a > img{
     outline: none;
 }
 
+.btn.btn-outline-success:hover{
+    background: #414141;
+}
+
 .feature{
     background: #F7F9FA;
     margin-top: 16px;
@@ -156,6 +160,7 @@ nav a > img{
     padding: 12px 24px;
     border-radius: 4px;
     color: white;
+    transition: 0.2s;
 }
 
 .android-studio .nut a:hover{

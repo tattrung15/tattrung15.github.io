@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Android Developers</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+		integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
+		integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"
+		integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="googleplay.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-white">
+		<a href="./index.html"><img
+				src="https://www.gstatic.com/devrel-devsite/prod/v9d570efc814a28024c8ff149d6de123f7f820fa81162ad936a6bcae349b1b74d/android/images/lockup.svg"
+				alt=""></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+			aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarTogglerDemo02" style="width: 60%;">
+			<ul class="navbar-nav mr-auto ml-4 mt-2 mt-lg-0">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Platform</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./studio.html">Android Studio</a>
+				</li>
+				<li style="border-bottom: 2px solid rgb(135, 224, 0);" class="nav-item">
+					<a class="nav-link" href="#">Google Play</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./jetpack.html">Jetpack</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Kotlin</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Thêm
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">NEWS</a>
+						<a class="dropdown-item" href="#">DOCS</a>
+					</div>
+				</li>
+			</ul>
+			<div class="row login-header">
+				<div class="col-md-6 col-xl-7 text-right">
+					<div class="lang">
+						<span class="menu-lang" style="font-size: 12px;">LANGUAGE <i class="fas fa-caret-down"></i>
+							<ul>
+								<li>English</li>
+								<li>Brasil</li>
+								<li>Deutsch</li>
+								<li>Tiếng Việt</li>
+							</ul>
+						</span>
+					</div>
+				</div>
+				<div class="login-btn col-md-6 col-xl-5 text-right">
+					<a href="#" class="login text-primary">ĐĂNG NHẬP</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div style="box-shadow: 0px 0px 10px grey;padding-top: 56px;z-index: 4;" class="container-fluid">
+		<div style="background-color: lavender;" class="row px-2 menu1">
+			<div style="padding:0px" class="col-xl-2 col-sm-6">
+				<h5 style="margin-top: 30px;text-align: left;width: fit-content;color: grey;">GOOGLE PLAY</h5>
+			</div>
+			<div class="col-xl-0">
+
+			</div>
+			<div style="color: white;padding:0px" class="col-xl-3 col-sm-6 launch">
+				<h5 style="width: fit-content;padding: 5px 10px;background-color: green;margin: 20px 0px 20px 0px;">
+					Launch Play Console</h5>
+			</div>
+			<div class="row">
+				<ul class="nav menu2">
+					<li class="nav-item">
+						<a style="border-bottom:solid green;padding-left: 30px;" class="nav-link active" href="#">TỔNG
+							QUAN</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">PLAY CONSOLE</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">PLAY STORE</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="#">PLAY BILLING</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">PLAY POLICIES</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">PLAY SERVICES</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="#">GAMES</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">HƯỚNG DẪN</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">RESOURCES</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">STORES</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div style="text-align: center;justify-content: center;" class="row mt-5 px-5">
+			<div class="col-12">
+				<img style="width: 310px;height: 62px;margin-bottom: 30px;"
+					src="https://developer.android.com/images/landing/play-hero-logo.svg">
+				<p style="font-size: 20px;color: grey;margin-bottom: 30px;">With the ability to publish rapidly to over
+					2 billion active Android devices, Google Play helps <br>you grow a global audience for your apps and
+					games and earn revenue.</p>
+
+			</div>
+		</div>
+		<div style="text-align: center;justify-content: center;" class="row px-5">
+			<p class="launchplayconsole">Launch Play Console</p>
+		</div>
+	</div>
+	<div class="container-fluid px-5">
+		<div style="background-image: url(https://cwsmgmt.corsair.com/newscripts/landing-pages/wallpaper/v4/Wallpaper-v4-2560x1440.jpg);background-position: center;background-size: cover;color: white;"
+			class="row mt-5">
+			<div class="col-xl-5 col-md-12 col-sm-12">
+				<p style="padding: 20px 20px;">FEATURE</p>
+				<h1 style="padding: 0px 20px;">Upcoming Android and Google Play Updates</h1>
+				<p style="padding: 20px 20px;">Read about the latest changes to our platform and policies to improve the
+					user experience and ensure a safe ecosystem.</p>
+				<p class="findout">FIND OUT MORE</p>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row mt-5 px-3">
+
+			<div class="col-xl-6 col-md-12">
+				<div style="background-color: lavender;margin-top:20px ;" class="100%">
+					<p style="padding: 20px 20px 10px 20px;margin-bottom: 0px;">FEATURE</p>
+					<p style="padding: 0px 20px;font-size: 16px;font-weight: bold;">Upcoming Android and Google Play
+						Updates</p>
+					<p style="padding: 0px 20px;">Read about the latest changes to our platform and policies to improve
+						the user experience and ensure a safe ecosystem.</p>
+					<div style="width: 100%;height: auto;text-align: center;margin-top: 80px;">
+						<img width="210px" height="183px"
+							src="https://developer.android.com/images/landing/google-play-prereg.png">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xl-6 col-md-12">
+				<div style="background-color: lavender;margin-top:20px ;" class="width:100%">
+					<p style="padding: 20px 20px 10px 20px;margin-bottom: 0px;">FEATURE</p>
+					<p style="padding: 0px 20px;font-size: 16px;font-weight: bold;">Upcoming Android and Google Play
+						Updates</p>
+					<p style="padding: 0px 20px;">Read about the latest changes to our platform and policies to improve
+						the user experience and ensure a safe ecosystem.</p>
+					<div style="width: 100%;height: auto;text-align: center;margin-top: 80px;">
+						<img width="210px" height="183px"
+							src="https://developer.android.com/images/landing/google-play-app-quality.png">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div bg-color:red class="container-fluid mt-5">
+		<div class="row px-3">
+			<div class="col-xl-6 col-sm-12">
+				<div
+					style="background-image: url(https://cwsmgmt.corsair.com/newscripts/landing-pages/wallpaper/v4/Wallpaper-v4-2560x1440.jpg);background-position: center;background-size: cover;color: white;height: 100%;">
+					<p style="padding: 20px 20px 10px 20px;margin-bottom: 0px;width: 100%;;">GUIDES</p>
+					<p style="padding: 0px 20px;font-size: 30px;font-weight: bold;">Learn how to publish your first app
+						using Google Play</p>
+					<p style="padding: 0px 20px;font-size: 20px;">Launch checklist</p>
+				</div>
+			</div>
+			<div class="col-xl-6 col-sm-12">
+				<div class="latestnews">
+					<span style="font-size: 50px;">Latest news</span>
+					<span class="morenews">MORE NEWS</span>
+				</div>
+				<div style="background-color: lavender;margin-top: 20px;" class="appsucess">
+					<p style="padding: 20px 0px 0px 20px;">BLOG</p>
+					<p style="font-weight: bold;font-size: 20px;padding:0px 60px 0px 20px;">Celebrating 1 year of Google
+						Play's Academy for App Success</p>
+					<p style="padding:0px 40px 0px 20px">One year ago, we introduced the Academy for App Success, an
+						e-learning platform to help apps and games businesses who want to grow on Android and Google
+						Play. In that time we've seen tens of thousands of people register for free learning, complete
+					</p>
+					<div style="width: 100%;height: 40px;padding: 20px 0px 80px 20px;display: flex;" class="adeveloper">
+						<img style="height: 40px;width: 40px;border-radius: 50%;" src="https://www.gstatic.com/devrel-devsite/prod/v2c9ac76a465325deeadecadac5c42eb727c931f99890694a7bf49d2cede0da04/android/images/custom/android-blog-round-icon.svg">
+						<p style="margin-left: 15px;font-size: small;">Android Developers<br>23 tháng 10, 2019</p>
+					</div>
+				</div>
+				<div style="background-color: lavender;margin-top: 20px;" class="appsucess">
+					<p style="padding: 20px 0px 0px 20px;">BLOG</p>
+					<p style="font-weight: bold;font-size: 20px;padding:0px 60px 0px 20px;">Celebrating 1 year of Google
+						Play's Academy for App Success</p>
+					<p style="padding:0px 40px 0px 20px">One year ago, we introduced the Academy for App Success, an
+						e-learning platform to help apps and games businesses who want to grow on Android and Google
+						Play. In that time we've seen tens of thousands of people register for free learning, complete
+					</p>
+					<div style="width: 100%;height: 40px;padding: 20px 0px 80px 20px;display: flex;" class="adeveloper">
+						<img style="height: 40px;width: 40px;border-radius: 50%;" src="https://www.gstatic.com/devrel-devsite/prod/v2c9ac76a465325deeadecadac5c42eb727c931f99890694a7bf49d2cede0da04/android/images/custom/android-blog-round-icon.svg">
+						<p style="margin-left: 15px;font-size: small;">Android Developers<br>23 tháng 10, 2019</p>
+					</div>
+				</div>
+				<div style="background-color: lavender;margin-top: 20px;" class="appsucess">
+					<p style="padding: 20px 0px 0px 20px;">BLOG</p>
+					<p style="font-weight: bold;font-size: 20px;padding:0px 60px 0px 20px;">Celebrating 1 year of Google
+						Play's Academy for App Success</p>
+					<p style="padding:0px 40px 0px 20px">One year ago, we introduced the Academy for App Success, an
+						e-learning platform to help apps and games businesses who want to grow on Android and Google
+						Play. In that time we've seen tens of thousands of people register for free learning, complete
+					</p>
+					<div style="width: 100%;height: 40px;padding: 20px 0px 80px 20px;display: flex;" class="adeveloper">
+						<img style="height: 40px;width: 40px;border-radius: 50%;" src="https://www.gstatic.com/devrel-devsite/prod/v2c9ac76a465325deeadecadac5c42eb727c931f99890694a7bf49d2cede0da04/android/images/custom/android-blog-round-icon.svg">
+						<p style="margin-left: 15px;font-size: small;">Android Developers<br>23 tháng 10, 2019</p>
+					</div>
+				</div>
+				<div style="text-align: center;padding-top: 30px;height: 60px;" class="more">
+					<span>MORE</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="latestnews">
+		<span style="font-size: 50px;">Latest videos</span>
+		<span class="morenews">MORE VIDEO</span>
+	</div>
+	<div class="container-fluid mt-5 px-4">
+		<div class="row px-2">
+			<div class="col-xl-4 col-md-12">
+				<div class="cyberlink">
+					<img src="https://i.ytimg.com/vi/BYzv9k31s8o/maxresdefault.jpg">
+					<div class="cyberlink1">
+						<p style="padding: 30px 20px 0px 20px;">YOUTUBE</p>
+						<p style="padding: 0px 20px 20px 20px;font-weight: bold;font-size: 20px;">CyberLink increased
+							revenue with Google Play subscriptions</p>
+						<p style="padding: 0px 20px 50px 20px;">CyberLink was founded in 1996 in Taiwan and is committed
+							to the development of multimedia software, of which, the app PowerDirector won the Google
+							Play Editors’ </p>
+						<div style="width: 100%;height: 40px;margin-bottom: 20px;padding: 0px 0px 30px 20px;display: flex;"
+							class="adeveloper">
+							<img style="height: 40px;width: 40px;border-radius: 50%;" src="https://www.gstatic.com/devrel-devsite/prod/v2c9ac76a465325deeadecadac5c42eb727c931f99890694a7bf49d2cede0da04/android/images/custom/android-blog-round-icon.svg">
+							<p style="margin-left: 15px;font-size: small;">Android Developers<br>23 tháng 10, 2019</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-4 col-md-12">
+				<div class="cyberlink">
+					<img src="https://i.ytimg.com/vi/V52xtPTF2gg/hqdefault.jpg">
+					<div class="cyberlink1">
+						<p style="padding: 30px 20px 0px 20px;">YOUTUBE</p>
+						<p style="padding: 0px 20px 20px 20px;font-weight: bold;font-size: 20px;">CyberLink increased
+							revenue with Google Play subscriptions</p>
+						<p style="padding: 0px 20px 50px 20px;">CyberLink was founded in 1996 in Taiwan and is committed
+							to the development of multimedia software, of which, the app PowerDirector won the Google
+							Play Editors’ </p>
+						<div style="width: 100%;height: 40px;margin-bottom: 20px;padding: 0px 0px 30px 20px;display: flex;"
+							class="adeveloper">
+							<img style="height: 40px;width: 40px;border-radius: 50%;" src="https://www.gstatic.com/devrel-devsite/prod/v2c9ac76a465325deeadecadac5c42eb727c931f99890694a7bf49d2cede0da04/android/images/custom/android-blog-round-icon.svg">
+							<p style="margin-left: 15px;font-size: small;">Android Developers<br>23 tháng 10, 2019</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-4 col-md-12">
+				<div class="cyberlink">
+					<img src="https://i.ytimg.com/vi/Dd-NiHCgcvQ/hqdefault.jpg">
+					<div class="cyberlink1">
+						<p style="padding: 30px 20px 0px 20px;">YOUTUBE</p>
+						<p style="padding: 0px 20px 20px 20px;font-weight: bold;font-size: 20px;">CyberLink increased
+							revenue with Google Play subscriptions</p>
+						<p style="padding: 0px 20px 50px 20px;">CyberLink was founded in 1996 in Taiwan and is committed
+							to the development of multimedia software, of which, the app PowerDirector won the Google
+							Play Editors’ </p>
+						<div style="width: 100%;height: 40px;margin-bottom: 20px;padding: 0px 0px 30px 20px;display: flex;"
+							class="adeveloper">
+							<img style="height: 40px;width: 40px;border-radius: 50%;" src="https://www.gstatic.com/devrel-devsite/prod/v2c9ac76a465325deeadecadac5c42eb727c931f99890694a7bf49d2cede0da04/android/images/custom/android-blog-round-icon.svg">
+							<p style="margin-left: 15px;font-size: small;">Android Developers<br>23 tháng 10, 2019</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="text-align: center;padding-top: 30px;height: 60px;" class="more">
+		<span>MORE</span>
+	</div>
+	<div style="background-color: lavender;" class="container-fluid mt-5">
+		<div style="text-align: center;background-color: lavender;height: auto;" class="findsuccess">
+			<h1 style="padding-top: 50px;">Find success on Google Play</h1>
+			<p style="font-size: 20px;">Focus on what is right for your app and learn how Google can help you to do more
+				for your audience.</p>
+		</div>
+		<div class="row px-3">
+			<div style="display: flex;flex-direction: column;" class="col-xl-7 col-sm-12">
+				<div style="padding: 20px;background-color: white;margin-top: 30px;padding-bottom: 50px;">
+					<p style="padding: 20px 20px 10px 0px;margin-bottom: 30px;width: 100%;">FEATURE</p>
+					<img style="padding: 10px 0px;"
+						src="https://developer.android.com/images/landing/play-console-logo.svg">
+					<p style="padding: 20px 20px 10px 0px;width: 100%;">From the Google Play Console you can manage all
+						phases of publishing and reach over 1 billion active Android users on Google Play.</p>
+					<span id="signin">SIGN IN</span>
+				</div>
+				<div
+					style="background-image:url(https://www.gstatic.com/devrel-devsite/prod/v15f72515e1c53f03e6d573e85fc193d888eb8fb1758082e4a5ecf80f00fa48ef/android/images/custom/blob-illustration-3-small.svg);background-repeat: no-repeat;background-position: center;background-size: cover;background-color: white;height: 300px;width: 100%;display: flex;flex-direction:column ;justify-content: flex-end;">
+					<span style="padding: 20px 20px;font-size: 16px;font-weight:bold;">ABOUT PLAY CONSOLE</span>
+				</div>
+			</div>
+			<div style="display: flex;flex-direction: column;" class="col-xl-5 col-sm-12">
+				<div style="padding: 20px;background-color: white;margin-top: 30px;padding-bottom: 30px;">
+					<p style="padding: 20px 20px 10px 0px;margin-bottom: 30px;width: 100%;">FEATURE</p>
+					<img style="padding: 10px 0px;" src="https://developer.android.com/images/landing/play-logo.svg">
+					<p style="padding: 20px 20px 10px 0px;width: 100%;">When you publish on Google Play, you put your
+						apps in front of over 1 billion active Android users, in more than 190 countries and territories
+						around the world. Google Play helps you get discovered, earn revenue, and build a global
+						business.</p>
+				</div>
+				<div
+					style="background-color: white;height: 300px;width: 100%;display: flex;flex-direction:column ;justify-content: flex-end;">
+					<span style="padding: 20px 20px;font-size: 16px;font-weight:bold;">ABOUT PLAY CONSOLE</span>
+				</div>
+			</div>
+		</div>
+		<div class="row px-3 mt-5">
+			<div class="col-xl-9 col-md-12 seeguides">
+				<div class="guides">
+					<p style="padding: 20px;">GUIDES</p>
+					<h1 style="padding: 20px;">Success guide</h1>
+					<p style="padding: 20px;">Learn how to develop Android apps and games and follow a simple guide to
+						see that they’re published on the Play store.</p>
+					<span style="margin-top: 50px;padding: 20px;">SEE GUIDES</span>
+				</div>
+				<div class="succes">
+				</div>
+			</div>
+			<div class="col-xl-3 col-md-12 startup1">
+				<div style="padding: 20px;background-color: white;">
+					<img src="https://developer.android.com/images/landing/bulb-icon.svg">
+					<h3>Startups on Google Play</h3>
+					<p>Take advantage of Google Play features to grow your startup</p><br>
+					<span class="startup">GROW YOUR STARTUP</span>
+				</div>
+			</div>
+		</div>
+		<div class="row mt-5 px-3 d-flex">
+			<div class="col-xl-3 col-lg-6 col-sm-12 landing">
+				<div style="padding: 20px;background-color: white;">
+					<img src="https://developer.android.com/images/landing/cart-icon.svg">
+					<strong>Android vitals</strong>
+					<p>Improve the stability and performance of your apps</p><br><br>
+					<span class="startup">CHECK YOUR VITALS</span>
+				</div>
+			</div>
+			<div class="col-xl-3 col-lg-6 col-sm-12 landing">
+				<div style="padding: 20px;background-color: white;">
+					<img height="96px" src="https://developer.android.com/images/landing/briefcase-icon.svg">
+					<strong>Android vitals</strong>
+					<p>Improve the stability and performance of your apps</p><br><br>
+					<span class="startup">CHECK YOUR VITALS</span>
+				</div>
+			</div>
+			<div class="col-xl-3 col-lg-6 col-sm-12 landing">
+				<div style="padding: 20px;background-color: white;">
+					<img src="https://developer.android.com/images/landing/checklist-icon.svg ">
+					<strong>Android vitals</strong>
+					<p>Improve the stability and performance of your apps</p><br><br>
+					<span class="startup">CHECK YOUR VITALS</span>
+				</div>
+			</div>
+			<div class="col-xl-3 col-lg-6 col-sm-12 landing">
+				<div style="padding: 20px;background-color: white;">
+					<img src="https://developer.android.com/images/landing/subscribe-icon.svg ">
+					<strong>Android vitals</strong>
+					<p>Improve the stability and performance of your apps</p><br><br>
+					<span class="startup">CHECK YOUR VITALS</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid mt-5">
+		<div style="text-align: center;" class="resources">
+			<h1>Resources</h1>
+		</div>
+		<div class="row px-3 mt-5">
+			<div class="col-xl-6 col-md-6 col-sm-12">
+				<div class="padding:0px 30px">
+					<div style="display: flex;" class="row px-3">
+						<div style="background-color: #ff5252;height: 100%;padding: 70px 50px;border-radius:0 ;"
+							class="col-xl-4 col-md-12">
+							<img width="95px" height="95px"
+								src="https://developer.android.com/images/landing/resource-badge.svg">
+						</div>
+						<div style="background-color: #202124;color: white;" class="col-xl-8 col-md-12">
+							<div style="padding: 20px;">
+								<h4>Badge generator</h4>
+								<p  style="margin-bottom: 50px;">Create badges for your app in just a few clicks, and download hi-res badge assets
+									localized for a variety of languages.</p>
+								<span class="startup">CREAT A BADGE</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-6 col-md-6 col-sm-12">
+				<div class="padding:0px 30px">
+					<div style="display: flex;" class="row px-3">
+						<div style="background-color: #00E676;height: 100%;padding: 70px 50px;border-radius:0 ;"
+							class="col-xl-4 col-md-12">
+							<img width="95px" height="95px"
+								src="https://developer.android.com/images/landing/resource-generator.svg">
+						</div>
+						<div style="background-color: #202124;color: white;" class="col-xl-8 col-md-12">
+							<div style="padding: 20px;">
+								<h4>Generate device art</h4>
+								<p style="margin-bottom: 50px;">Drag and drop screenshots of your app into device artwork, for better looking promotional images and improved visual context.</p>
+								<span class="startup">CREATE ART</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid mt-5">
+		<div class="d-flex row px-3 resources">
+			<div class="col-xl-6 col-md-6 col-sm-12" style=" height: 500px;overflow: hidden;">
+				<div class="policycenter">
+					<p>RESOURCES</p>
+					<h1>Policy Center</h1>
+					<p>Understand Google Play's developer policies and deliver trusted apps to a global audience.</p>
+					<span class="startup">LEARN MORE ABOUT POLICIES</span>
+				</div>
+				<div id="policycenter">
+					<img style="background-size: 500px auto;background: #202124;; background-position: top center;" src="https://www.gstatic.com/devrel-devsite/prod/v15f72515e1c53f03e6d573e85fc193d888eb8fb1758082e4a5ecf80f00fa48ef/android/images/custom/keyline-illustration-2.svg" alt="">
+				</div>
+			</div>
+			<div class="col-xl-6 col-md-6 col-sm-12 guidelines">
+				<div class="qualityguidelines">
+					<div class="qualityguidelines1">
+						<img style="height: 100%; width: 100%;" src="https://developer.android.com/images/landing/resource-guideline.svg">
+					</div>
+					<div class="getthequality">
+						<h3>Quality guidelines</h3>
+						<p>Test your Android apps against these quality guidelines to ensure you provide an excellent user experience and gain additional exposure available for Wear, TV, and Auto apps</p>
+						<span class="startup">GET THE QUALITY GUIDELINES</span>
+					</div>
+				</div>
+				<div class="seeall">
+					<h1>See all resources</h1>
+					<p>Tools and resources to help you prepare promotional assets for use in your marketing.</p>
+					<div style="display: flex;justify-content: flex-end;color: white;margin-top: 100px;"><i style="font-size: 20px;cursor: pointer;" class="fas fa-arrow-right"></i></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<hr width="100%"></hr>
+	<div class="container-fluid mt-5">
+		
+		<div class="row p-4">
+			<div class="col-xl-3 col-md-6 col-sm-12 text-center">
+				<div class="twitter">
+					<i class="fab fa-twitter" style="font-size: 48px;"></i><br>
+						<span class="link">Twitter</span></a> <br>
+						<span class="needhide">Theo dõi @AndroidDev <br>
+							trên Twitter</span>
+				</div>
+			</div>
+			<div class="col-xl-3 col-md-6 col-sm-12 text-center">
+				<div class="twitter">
+					<img src="https://developer.android.com/images/footer/logo-medium-round.svg" style="height: 48px;width: 48px;" ><br>
+						<span class="link">Medium</span></a> <br>
+					<span class="needhide">Read articles and industry <br>
+						thoughts from the Play team</span>
+				</div>
+			</div>
+			<div class="col-xl-3 col-md-6 col-sm-12 text-center">
+				<div class="twitter">
+					<img src="https://developer.android.com/images/footer/logo-linkedin.svg" style="height: 48px;width: 48px;" ><br>
+						<span class="link">LinkedIn</span> <br>
+						<span class="needhide">Connect with Google Play<br>
+							Apps & Games</spanspan>
+				</div>
+			</div>
+			<div class="col-xl-3 col-md-6 col-sm-12 text-center">
+				<div class="twitter">
+					<img src="https://developer.android.com/images/footer/logo-facebook-messenger.svg" style="height: 48px;width: 48px;" ><br>
+						<span class="link">Messenger</span></a> <br>
+						<span class="needhide">Message @GooglePlayDev for<br>
+							developer support</span>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="row p-4">
+			<div class="col-md-4 col-sm-12">
+				<h3 style="font-size: 16px; font-weight: bold;">Tìm hiểu thêm về Android</h3>
+				<div class="footer-list">
+					<ul>
+						<li><a href="">Android</a></li>
+						<li><a href="">Enterprise</a></li>
+						<li><a href="">Bảo mật</a></li>
+						<li><a href="">Source</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-12">
+				<h3 style="font-size: 16px; font-weight: bold;">Hỗ trợ</h3>
+				<div class="footer-list">
+					<ul>
+						<li><a href="">Báo cáo lỗi nền tảng</a></li>
+						<li><a href="">Báo cáo lỗi tài liệu</a></li>
+						<li><a href="">Google play support</a></li>
+						<li><a href="">Tham gia nghiên cứu</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-12">
+				<h3 style="font-size: 16px; font-weight: bold;">Tài liệu</h3>
+				<div class="footer-list">
+					<ul>
+						<li><a href="">Hướng dẫn cho nhà phát triển</a></li>
+						<li><a href="">Hướng dẫn thiết kế</a></li>
+						<li><a href="">Tham chiếu API</a></li>
+						<li><a href="">Mẫu</a></li>
+						<li><a href="">Android Studio</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="row p-1">
+			<div class="logo col-lg-2 col-md-12 pl-4">
+				<img src="https://www.gstatic.com/devrel-devsite/prod/v9d570efc814a28024c8ff149d6de123f7f820fa81162ad936a6bcae349b1b74d/developers/images/lockup.svg?dcb_=0.69559255947873"
+					alt="" style="height: 32px; width: 185px;">
+			</div>
+			<div class="col-lg-10 col-md-12 menu-footer">
+				<ul>
+					<li><a href="">Android</a></li>
+					<li><a href="">Chrome</a></li>
+					<li><a href="">Firebase</a></li>
+					<li><a href="">Google Cloud Platform</a></li>
+					<li><a href="">Tất cả sản phẩm</a></li>
+				</ul>
+			</div>
+		</div>
+		<hr>
+		<div class="row pb-4">
+			<div class="col-lg-5 col-md-12 col-sm-12 menu-footer2">
+				<ul style="margin: 0;">
+					<li><a href="">Quyền riêng tư</a></li>|
+					<li><a href="">Giấy phép</a></li>|
+					<li><a href="">Nguyên tắc về thương hiệu</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-7 col-md-12 col-sm-12 text-right">
+				<div style="line-height: 40px;"><span class="pl-5">Xem tin tức và các mẹo qua email</span>
+					<button type="button" class="btn btn-primary">Đăng kí</button>
+					<select name="" class="lang-footer" style="padding: 10px 16px; outline: 0;">
+						<option>English</option>
+						<option>Brasil</option>
+						<option>Deutsch</option>
+						<option>Tiếng Việt</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

@@ -41,46 +41,34 @@ nav a > img{
 
 .login-header{
     width: 35%;
-}
-
-.menu-lang{
     position: relative;
-    cursor: pointer;
-    border-radius: 2px;
-    font-size: small;
 }
 
-.menu-lang:hover{
-    background: rgb(209, 209, 209);
-}
-
-.menu-lang ul{
-    padding: 10px 0;
-    width: 150px;
-    background: white;
+.test{
+    margin-top: 3px;
     position: absolute;
-    list-style: none;
-    top: 30px;
-    right: -1px;
-    box-shadow: 0 0 5px gray;
-    display: none;
-    border-radius: 3px;
-    z-index: 9;
+    width: 180px;
+    transition: 0.5s;
+    right: 0;
 }
 
-.menu-lang ul li{
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    padding-left: 15px;
+.test:focus{
+    width: 1000px;
 }
 
-.menu-lang ul li:hover{
-    background: rgb(209, 209, 209);
+.nutl{
+    border: 1px solid rgb(177, 177, 177);
+    background: white;
+    color: black;
+    padding: 4px 8px;
 }
 
-.menu-lang:hover ul{
-    display: block;
+.nutl:focus{
+    outline: 0;
+}
+
+.nutl:hover{
+    background: #F1F3F4;
 }
 
 .header{
@@ -313,6 +301,9 @@ nav a > img{
     }
     .login-header{
         width: 100%;
+    }
+    .menu-search{
+        display: none;
     }
 }
 

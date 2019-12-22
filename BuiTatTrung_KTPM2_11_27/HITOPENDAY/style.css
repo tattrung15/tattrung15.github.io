@@ -1,0 +1,349 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    background: #3C3D46;
+    display: flex;
+    box-shadow: 0 0 8px 4px gray;
+}
+
+.menu-logo{
+    padding: 8px;
+    display: flex;
+    width: 40%;
+}
+
+.menu-logo > img{
+    margin-right: 40px;
+    margin-left: 20px;
+}
+
+.menu-list{
+    padding: 0;
+    width: 60%;
+}
+
+.menu-list ul{
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.menu-list ul li{
+    background: rgb(250, 250, 250);
+    padding: 12px 46px;
+    height: 50px;
+    line-height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.menu-list ul li:hover a{
+    color: red;
+}
+
+.menu-list ul li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-weight: bold;
+}
+
+.banner{
+    width: 100%;
+}
+
+.banner .banner-bg{
+    background-image: url('./pic/1.jpg');
+    width: 100%;
+    height: 800px;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.btn-banner{
+    text-align: center;
+}
+
+.btn-banner .btn-banner-in, .btn-banner .btn-banner-in1, .btn-banner .btn-banner-in2, .btn-banner .btn-banner-in3, .btn-banner .btn-banner-in4{
+    position: absolute;
+    z-index: 5;
+    top: 280px;
+    left: 46%;
+    cursor: pointer;
+}
+
+.btn-banner .btn-banner-in1, .btn-banner .btn-banner-in2, .btn-banner .btn-banner-in3, .btn-banner .btn-banner-in4{
+    position: absolute;
+    z-index: 4;
+    top: 280px;
+    left: 46%;
+    transition: 0.5s;
+}
+
+.btn-banner .btn-banner-in, .btn-banner .btn-banner-in1, .btn-banner .btn-banner-in2, .btn-banner .btn-banner-in3, .btn-banner .btn-banner-in4{
+    height: 120px;
+    width: 120px;
+    color: white;
+    background: #556688;
+}
+
+.btn-banner .btn-banner-in i, .btn-banner .btn-banner-in1 i, .btn-banner .btn-banner-in2 i, .btn-banner .btn-banner-in3 i, .btn-banner .btn-banner-in4 i{
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.btn-banner .btn-banner-in .btn-icon{
+    height: 200px;
+    width: 200px;
+    color: white;
+}
+
+.btn-banner:hover > .btn-banner-in1{
+    top: 55%;
+}
+
+.btn-banner:hover > .btn-banner-in2{
+    top: 23%;
+}
+
+.btn-banner:hover > .btn-banner-in3{
+    left: 38.5%;
+}
+
+.btn-banner:hover > .btn-banner-in4{
+    left: 53.8%;
+}
+
+.btn-banner-in1{
+    background: rgb(206, 76, 59) !important;
+}
+
+.btn-banner-in2{
+    background: orange !important;
+}
+
+.btn-banner-in3{
+    background: rgb(0, 185, 185) !important;
+}
+
+.btn-banner-in4{
+    background: rgb(62, 62, 255) !important;
+}
+
+.about{
+    width: 100%;
+}
+
+.about h1, .leader h1, .portfolio h1{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.about hr, .leader hr, .portfolio hr{
+    width: 15%;
+    color: blue;
+    margin: 0 auto;
+    padding: 0 !important;
+    margin-top: 20px;
+}
+
+.info{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+}
+
+.info .info-hit{
+    width: 33.33%;
+}
+
+.info .info-pic{
+    width: 33.33%;
+}
+
+.info .info-pic img{
+    border-radius: 50%;
+    border: 2px solid #AB6E00;
+}
+
+.info .info-hitclass{
+    width: 33.33%;
+}
+
+.info .info-hit h2, .info .info-hitclass h2{
+    margin-bottom: 20px;
+}
+
+.info .info-hit ul li{
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.info .info-hit ul li i{
+    color: blue;
+    font-size: 30px;
+}
+
+.info-hitclass-btn{
+    padding: 40px;
+}
+
+.info-hitclass-btn .btn{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid black;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 70px;
+    float: left;
+    margin: 4px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.info-hitclass-btn .btn:hover{
+    background: black;
+    color: white;
+}
+
+.leader{
+    width: 100%;
+}
+
+.card{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.card-info{
+    width: 33.33%;
+    padding: 40px;
+}
+
+.card-info .card-info-in{
+    width: 100%;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: #FF6933;
+}
+
+.card-info .card-info-in img{
+    height: 400px;
+    width: 100%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card-info .card-info-in:hover > img{
+    transform: scale(1.2,1.2);
+}
+
+.card-info .title{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 120px;
+    background: #FF6933;
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}
+
+.portfolio{
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.portfolio .portfolio-in{
+    display: flex;
+}
+
+.portfolio-in .pic{
+    width: 33.33%;
+    padding: 4px;
+}
+
+.portfolio-in .pic .pic-in{
+    height: 300px;
+    width: 100%;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.portfolio-in .pic .pic-in img{
+    height: 300px;
+    width: 100%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.portfolio-in .pic .pic-in:hover > img{
+    transform: scale(1.2,1.2);
+}
+
+.cover{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.cover .pic{
+    padding: 4px;
+}
+
+.cover .pic .pic-in{
+    height: 700px;
+    width: 100%;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.cover .pic .pic-in img{
+    height: 700px;
+    width: 100%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.cover .pic .pic-in:hover > img{
+    transform: scale(1.2,1.2);
+}
+
+.footer{
+    width: 100%;
+    height: 120px;
+    background: #F0FFFF;
+    line-height: 120px;
+    text-align: center;
+}
+
+.footer p{
+    font-size: 20px;
+}
+
+.footer i{
+    color: red;
+}
+
+.footer span{
+    color: orange;
+    font-weight: bold;
+}

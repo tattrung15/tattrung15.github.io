@@ -1,3 +1,4 @@
+//basic
 function reset1() {
     document.getElementById('a').value = '';
     document.getElementById('b').value = '';
@@ -95,4 +96,72 @@ function submit3(){
     } else {
         res.innerHTML = -1;
     }
+}
+
+//advance
+let slide = [
+    {
+        'bgColor': 'red',
+        'text': '1st slide'
+    },
+    {
+        'bgColor': 'blue',
+        'text': '2nd slide'
+    },
+    {
+        'bgColor': 'green',
+        'text': '3rd slide'
+    },
+    {
+        'bgColor': 'yellow',
+        'text': '4th slide'
+    },
+    {
+        'bgColor': 'pink',
+        'text': '5th slide'
+    }
+];
+
+let slideContainer = document.getElementById('slideContainer');
+let slideInterval = null;
+
+initSlide();
+
+function initSlide(){
+    let slideShow = document.createElement('div');
+    slideShow.id = 'slideShow';
+    slideShow.style.width = slide.length*450 + 'px';
+    slideShow.style.left = 0;
+    let htmlStr = '';
+    for(let i = 0; i < slide.length; i++){
+        htmlStr += `<div class="slide" style="background: ${slide[i].bgColor}"><span style="margin: 0 auto">${slide[i].text}</span></div>`
+    }
+    slideShow.innerHTML = htmlStr;
+    slideContainer.appendChild(slideShow);
+
+    slideInterval = setInterval(next, 2000);
+}
+
+function onPreviousClick(){
+    clearInterval(slideInterval);
+    prev();
+    slideInterval = setInterval(next, 2000);
+}
+
+function onNextClick(){
+    clearInterval(slideInterval);
+    next();
+    slideInterval = setInterval(next, 2000);
+}
+
+function prev(){
+    let slideShow = document.getElementById('slideShow');
+    let prevLeft = Number.parseInt(slideShow.style.left.replace('px', '') | 0) + 450;
+    slideShow.style.left = prevLeft > 0 ? `${(slide.length - 1)* -450}px` : `${prevLeft}px`;
+}
+
+function next(){
+    let slideShow = document.getElementById('slideShow');
+    let nextLeft = Number.parseInt(slideShow.style.left.replace('px', '') | 0) - 450;
+    slideShow.style.left = nextLeft <= (slide.length * (-450)) ? 0 : `${nextLeft}px`;
 }

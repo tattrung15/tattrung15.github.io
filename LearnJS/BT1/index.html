@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="basic">
+            <h1>Hàm, rẽ nhánh, vòng lặp</h1>
+            <hr>
+            <h3>Bài 1: Xây dựng hàm giải phương trình bậc 2</h3> <br>
+            <input type="number" id="a" style="width: 100px"> x<sup>2</sup> + 
+            <input type="number" id="b" style="width: 100px"> x + 
+            <input type="number" id="c" style="width: 100px"> = 0
+            <br><br>
+            <input style="cursor: pointer;" type="reset" value="Reset" onclick="reset1()">
+            <input style="cursor: pointer;" type="submit" value="Submit" onclick="submit1()">
+            <span id="res1" style="color: red;"></span> <hr>
+
+            <h3>Bài 2: Nhập vào tháng và năm in ra số ngày trong tháng</h3> <br>
+            Month: <input type="number" id="month" style="width: 100px">
+            Year: <input type="number" id="year" style="width: 100px">
+            <br><br>
+            <input style="cursor: pointer;" type="reset" value="Reset" onclick="reset2()">
+            <input style="cursor: pointer;" type="submit" value="Submit" onclick="submit2()">
+            <span id="res2" style="color: red;"></span> <hr>
+
+            <h3>Bài 3: Nhập vào 1 số nguyên n, xuất tất cả các số nguyên tố từ 1 đến n nếu ko có số nào xuất -1</h3> <br>
+            Nhập n: <input type="number" id="n" style="width: 100px">
+            <br><br>
+            <input style="cursor: pointer;" type="reset" value="Reset" onclick="reset3()">
+            <input style="cursor: pointer;" type="submit" value="Submit" onclick="submit3()">
+            <span id="res3" style="color: red;"></span>
+        </div>
+        <div class="advance">
+            <h1>Nâng cao</h1>
+            <hr>
+            <div class="slide-example">
+                <span class="slide-btn btnPrevious" onClick="onPreviousClick()"><i class="fa fa-arrow-circle-left"></i></span>
+                <span class="slide-btn btnNext" onClick="onNextClick()"><i class="fa fa-arrow-circle-right"></i></span>
+                <div id="slideContainer"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -39,7 +39,6 @@ body{
     left: 0;
     position: fixed;
     display: none;
-    transition: all 1s;
 }
 
 .transparent{

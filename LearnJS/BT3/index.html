@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body onload="showInfo()">
     <div class="container">
         <pre id="info"></pre>
@@ -13,18 +15,83 @@
     </div>
     <div class="view-form">
         <div class="transparent"></div>
-            
+
         <div class="frm">
             <div style="padding: 20px;">
                 <form name="frm">
                     <div class="left">
-                        a
+                        <div class="left-in">
+                            <input type="text" name="title" id="title"> <br>
+                            <div class="type">
+                                <label for="type">Type: </label>
+                                <select name="type" id="type">
+                                    <option value="task">Task</option>
+                                    <option value="feature">Feature</option>
+                                    <option value="issue">Issue</option>
+                                    <option value="bug">Bug</option>
+                                </select>
+                            </div>
+                            <div class="state">
+                                <label for="type">State: </label>
+                                <select name="type" id="type">
+                                    <option value="todo">Todo</option>
+                                    <option value="inprocessing">In processing</option>
+                                    <option value="inreview">Inreview</option>
+                                    <option value="done">Done</option>
+                                </select>
+                            </div>
+                            <div class="priority">
+                                <label for="priority">Priority: </label>
+                                <input type="radio" name="priority" id="priorityHighest" value="highest">
+                                <label for="priorityHighest">Highest</label>
+                                <input type="radio" name="priority" id="priorityHigh" value="high">
+                                <label for="priorityHigh">High</label>
+                                <input type="radio" name="priority" id="priorityMedium" value="medium">
+                                <label for="priorityMedium">Medium</label>
+                                <input type="radio" name="priority" id="priorityLow" value="low">
+                                <label for="priorityLow">Low</label>
+                            </div>
+                            <div class="issueFor">
+                                <label for="issueFor">Issue allow for:</label>
+                                <br>
+                                <input type="checkbox" name="back_end" id="back_end">
+                                <label for="back_end">Back-end</label>
+                                <br>
+                                <input type="checkbox" name="front_end" id="front_end">
+                                <label for="front_end">Front-end</label>
+                                <br>
+                                <input type="checkbox" name="function_tester" id="function_tester">
+                                <label for="function_tester">Function tester</label>
+                                <br>
+                                <input type="checkbox" name="performance_tester" id="performance_tester">
+                                <label for="performance_tester">Performance tester</label>
+                            </div>
+                            <div class="description">
+                                <label for="description">Description:</label>
+                                <br>
+                                <textarea name="description" id="description" rows="5"></textarea>
+                            </div>
+                        </div>
                     </div>
-                    <div class="right"></div>
+                    <div class="right">
+                        <label for="createdBy"><b>Created by:</b></label> <br>
+                        <input type="text" name="createdBy" id="createdBy"> <br> <br>
+                        <label for="assignee"><b>Assignee:</b></label> <br>
+                        <input type="assignee" name="assignee" id="assignee"> <br> <br>
+                        <label for="estimate"><b>Estimate:</b></label> <br>
+                        <input type="text" name="estimate" id="estimate"> <br> <br>
+                    </div>
                 </form>
+            </div>
+            <div class="form-action">
+                <div class="btn-action">
+                    <a href="#" class="btn btn-save">Save</a>
+                    <a href="#" class="btn btn-close">Close</a>
+                </div>
             </div>
         </div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>

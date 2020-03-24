@@ -11,7 +11,7 @@
 <body onload="showInfo()">
     <div class="container">
         <pre id="info"></pre>
-        <a href="#" onclick="showForm()">Update</a>
+        <a style="font-family: Arial, Helvetica, sans-serif;" href="#" onclick="showForm()">Update</a>
     </div>
     <div class="view-form">
         <div class="transparent"></div>
@@ -32,8 +32,8 @@
                                 </select>
                             </div>
                             <div class="state">
-                                <label for="type">State: </label>
-                                <select name="type" id="type">
+                                <label for="state">State: </label>
+                                <select name="state" id="state">
                                     <option value="todo">Todo</option>
                                     <option value="inprocessing">In processing</option>
                                     <option value="inreview">Inreview</option>
@@ -51,20 +51,20 @@
                                 <input type="radio" name="priority" id="priorityLow" value="low">
                                 <label for="priorityLow">Low</label>
                             </div>
-                            <div class="issueFor">
-                                <label for="issueFor">Issue allow for:</label>
+                            <div class="allowFor">
+                                <label for="allowFor">Issue allow for:</label>
                                 <br>
-                                <input type="checkbox" name="back_end" id="back_end">
+                                <input type="checkbox" name="allowFor" id="back_end" value="back_end">
                                 <label for="back_end">Back-end</label>
                                 <br>
-                                <input type="checkbox" name="front_end" id="front_end">
+                                <input type="checkbox" name="allowFor" id="front_end" value="front_end">
                                 <label for="front_end">Front-end</label>
                                 <br>
-                                <input type="checkbox" name="function_tester" id="function_tester">
-                                <label for="function_tester">Function tester</label>
+                                <input type="checkbox" name="allowFor" id="function_test" value="function_test">
+                                <label for="function_test">Function tester</label>
                                 <br>
-                                <input type="checkbox" name="performance_tester" id="performance_tester">
-                                <label for="performance_tester">Performance tester</label>
+                                <input type="checkbox" name="allowFor" id="performance_test" value="performance_test">
+                                <label for="performance_test">Performance tester</label>
                             </div>
                             <div class="description">
                                 <label for="description">Description:</label>
@@ -85,8 +85,8 @@
             </div>
             <div class="form-action">
                 <div class="btn-action">
-                    <a href="#" class="btn btn-save">Save</a>
-                    <a href="#" class="btn btn-close">Close</a>
+                    <a href="#" class="btn btn-save" onclick="saveChanges()">Save</a>
+                    <a href="#" class="btn btn-close" onclick="closeForm()">Close</a>
                 </div>
             </div>
         </div>

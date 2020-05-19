@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import ThumnImg from './components/ThumbImg';
+import ThumbImg from './components/ThumbImg';
 
 class App extends React.Component {
 
@@ -26,9 +26,9 @@ class App extends React.Component {
     return (
       <div className="container">
         <div className="left">
-          <ThumnImg path={'/pic/1.jpg'} />
-          <ThumnImg path={'/pic/2.jpg'} />
-          <ThumnImg path={'/pic/3.jpg'} />
+          <ThumbImg path={'/pic/1.jpg'} />
+          <ThumbImg path={'/pic/2.jpg'} />
+          <ThumbImg path={'/pic/3.jpg'} />
         </div>
         <div className="center">
           <div className="show-img">
@@ -38,9 +38,9 @@ class App extends React.Component {
           </div>
         </div>
         <div className="right">
-          <ThumnImg path={'/pic/4.jpg'} />
-          <ThumnImg path={'/pic/5.jpg'} />
-          <ThumnImg path={'/pic/6.jpg'} />
+          <ThumbImg path={'/pic/4.jpg'} />
+          <ThumbImg path={'/pic/5.jpg'} />
+          <ThumbImg path={'/pic/6.jpg'} />
         </div>
       </div>
     );

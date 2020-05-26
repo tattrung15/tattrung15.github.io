@@ -90,14 +90,6 @@ class App extends React.Component {
             </div>
           </div>
         </div>
-        <div className="message_template">
-          <li className="message">
-            <div className="avatar"></div>
-            <div className="text_wrapper">
-              <div className="text"></div>
-            </div>
-          </li>
-        </div>
       </div>
     );
   }

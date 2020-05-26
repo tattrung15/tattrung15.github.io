@@ -33,7 +33,7 @@ class App extends React.Component {
         <div className="center">
           <div className="show-img">
             <div className="pic">
-              <img src={path} alt=""></img>
+              <img src={path} alt="" />
             </div>
           </div>
         </div>

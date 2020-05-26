@@ -5,7 +5,7 @@ class ThumbImg extends React.Component {
     return (
       <div className="thumb-img">
         <div className="pic">
-          <img src={this.props.path} alt=""></img>
+          <img src={this.props.path} alt="" />
         </div>
       </div>
     );

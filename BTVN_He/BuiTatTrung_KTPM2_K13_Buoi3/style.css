@@ -1,0 +1,161 @@
+body{
+    background-color: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;   
+}
+
+li{
+    list-style: none;
+}
+
+.container{
+    height: 1200px;
+    width: 100%;
+}
+
+.header{
+    height: 20%;
+    width: 100%;
+}
+
+.header-text{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    background-color: white;
+}
+
+.header-menu{
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    display: flex;
+}
+
+.menu-left{
+    height: 100%;
+    width: 90%;
+}
+
+.menu-right{
+    height: 100%;
+    width: 10%;
+}
+
+.menu-left li{
+    float: left;
+}
+
+.menu-right li{
+    float: right;
+}
+
+.menu-left li a, .menu-right li a{
+    display: block;
+    height: 300%;
+    line-height: 300%;
+    padding: 0 15px;
+}
+
+.margin-top{
+    margin-top: 1%;
+}
+
+.margin-l-r *{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.content{
+    height: 72%;
+    width: 100%;
+}
+
+.content1{
+    float: left;
+    height: 100%;
+    width: 75%;
+}
+
+.content1-1{
+    height: 49.5%;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+}
+
+.content1-2{
+    width: 100%;
+    height: 49.5%;
+    overflow: hidden;
+    background-color: white;
+}
+
+.img1{
+    padding: 15px;
+    height: 150px;
+    width: auto;
+    background-color: #aaaaaa;
+}
+
+.img2{
+    padding: 15px;
+    height: 50px;
+    width: auto;
+    background-color: #aaaaaa;
+}
+
+.content2{
+    float: right;
+    height: 100%;
+    width: 24%;
+}
+
+.content2-1{
+    overflow: hidden;
+    height: 30%;
+    width: 100%;
+    background-color: white;
+}
+
+.content2-2{
+    overflow: hidden;
+    height: 40%;
+    width: 100%;
+    background-color: white;
+}
+
+.img3{
+    padding: 15px;
+    height: 240px;
+    width: auto;
+    background-color: #aaaaaa;
+}
+
+.block{
+    padding-top: 12%;
+    padding-bottom: 12%;
+}
+
+.content2-3{
+    overflow: hidden;
+    height: 15%;
+    width: 100%;
+    background-color: white;
+}
+
+.footer{
+    clear: both;
+    height: 5%;
+    width: 100%;
+    background-color: #dddddd;
+    display: flex;
+}
+
+.footer-text{
+    margin: auto;
+}

@@ -1,0 +1,112 @@
+hr{
+	width: 70%;
+}
+
+.header{
+	background: black;
+	text-align: center;
+	height: 40px;
+	width: auto;
+}
+
+.header a{
+	color: white;
+	font-family: cursive;
+	margin: 40px;
+	font-style: italic;
+}
+
+.container{
+	text-align: center;
+	font-family: Arial;
+}
+
+.text3{
+	font-style: italic;
+}
+
+.content-in{
+	padding: 50px;
+}
+
+.text1{
+	border: 2px solid #D67E6D;
+	font-weight: bold;
+	font-size: 25px;
+	font-style: italic;
+	padding: 0 15px;
+}
+
+.text2{
+	width: 70%;
+	border-left: 2px solid #67106E;
+	border-right: 2px solid #67106E;
+	font-weight: bold;
+	font-size: 25px;
+	margin: 20px auto;
+	border-radius: 5%;
+}
+
+table{
+	margin: 20px auto;
+	width: 70%;
+	height: 300px;
+	background-color: #808080;
+}
+
+.title{
+	font-weight: bold;
+	font-size: 20px;
+	margin: 50px;
+}
+
+.pic1{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	width: 300px;
+	height: 300px;
+	float: left;
+	border-radius: 50%;
+	background-size: cover;
+	background-image: url("Pic/1.jpg");
+}
+
+.pic2{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	width: 300px;
+	height: 300px;
+	float: right;
+	border-radius: 50%;
+	background-size: cover;
+	background-image: url("Pic/2.jpg");
+}
+
+.pic-container{
+	width: auto;
+	height: 300px;
+}
+
+.frame{
+	width: 55%;
+	margin: 0 auto;
+}
+
+img{
+	height: 300px;
+	width: 300px;
+}
+
+.footer{
+	text-align: center;
+	margin: 70px 0 0 0;
+	height: 100px;
+	background: black;
+	color: white;
+}
+
+.footer p{
+	padding: 30px;
+}

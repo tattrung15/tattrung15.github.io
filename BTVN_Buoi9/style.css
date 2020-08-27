@@ -266,7 +266,8 @@ span a:hover{
     }
     .header img{
         visibility: visible;
-        width: 450px;
+        width: 100%;
+        object-fit: scale-down;
         height: 600px;
         margin: 10px auto;
         display: block;

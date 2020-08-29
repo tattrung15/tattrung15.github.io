@@ -70,12 +70,12 @@ img{
 
 .pic-left{
     width: 50%;
-    padding-right: 8px;
+    padding: 0 8px;
 }
 
 .pic-right{
     width: 50%;
-    padding-left: 8px;
+    padding: 0 8px;
 }
 
 .about{

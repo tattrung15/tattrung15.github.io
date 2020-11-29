@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="audio-player-area">
+    <div class="audioplayer-playpause">
+      <i class="fa fa-play"></i>
+    </div>
+    <div class="audioplayer-time time-current">00:00</div>
+    <div class="audioplayer-bar">
+      <div class="audioplayer-bar-loaded">
+        <div class="slider-handle"></div>
+      </div>
+    </div>
+    <div class="audioplayer-time time-duration">00:00</div>
+    <div class="audioplayer-volume">
+      <i class="fa fa-volume-up"></i>
+    </div>
+    <input type="range" min="1" max="100" value="100" class="slider">
+  </div>
+
+  <script src="audio-player.js"></script>
+</body>
+</html>

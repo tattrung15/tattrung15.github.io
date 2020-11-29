@@ -60,6 +60,7 @@ audio.addEventListener('timeupdate', (ev) => {
     icon.style.color = 'blue';
     audioplayerPlaypause.style.background = 'rgba(37, 37, 255, 0.2)';
     barLoaded.style.width = '0%';
+    timeCurrent.innerHTML = '00:00';
   }
   timeCurrent.innerHTML = secondsToMinutesAndSeconds(currTime);
 });

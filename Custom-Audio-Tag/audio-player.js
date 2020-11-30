@@ -2,14 +2,14 @@ const audio = new Audio('TrenTinhBanDuoiTinhYeu.mp3');
 
 var icon = document.querySelector('.fa');
 var audioplayerPlaypause = document.querySelector('.audioplayer-playpause');
-var barLoaded = document.querySelector('.audioplayer-bar-loaded');
-var sliderVolume = document.querySelector('.slider');
+var barLoaded = document.querySelector('.slider-handle');
+var sliderVolume = document.querySelector('.slider-volume');
 var timeCurrent = document.querySelector('.time-current');
 var timeDuration = document.querySelector('.time-duration');
 
 var isPlayIcon = true;
 icon.style.color = 'blue';
-barLoaded.style.width = '0%';
+barLoaded.value = '0';
 
 function changePlayButton() {
 	if (isPlayIcon) {
@@ -52,7 +52,7 @@ audioplayerPlaypause.addEventListener('mouseout', () => {
 audio.addEventListener('timeupdate', (ev) => {
   let currTime = ev.currentTarget.currentTime;
   let percentTime = (currTime/audio.duration)*100;
-  barLoaded.style.width = `${percentTime}%`;
+  barLoaded.value = `${percentTime}`;
   timeCurrent.innerHTML = secondsToMinutesAndSeconds(currTime);
   if(percentTime == 100){
     icon.classList.remove('fa-pause');
@@ -60,10 +60,16 @@ audio.addEventListener('timeupdate', (ev) => {
     isPlayIcon = true;
     icon.style.color = 'blue';
     audioplayerPlaypause.style.background = 'rgba(37, 37, 255, 0.2)';
-    barLoaded.style.width = '0%';
+    barLoaded.value = '0';
     timeCurrent.innerHTML = '00:00';
     timeDuration.innerHTML = '00:00';
   }
+});
+
+barLoaded.addEventListener('input', (ev) => {
+  let currLoad = ev.target.value;
+  let currTime = (currLoad/100)*audio.duration;
+  audio.currentTime = currTime;
 });
 
 sliderVolume.addEventListener('input', (ev) => {

@@ -1,46 +1,60 @@
 import React from "react";
 import "./App.css";
-import ThumbImg from './components/ThumbImg';
+import ThumbImg from "./components/ThumbImg";
 
 class App extends React.Component {
-
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
-      path: '/pic/5.jpg'
-    }
+      path: "/pic/5.jpg",
+    };
+    this.thumbShow = React.createRef();
+    this.images = [
+      "/pic/1.jpg",
+      "/pic/2.jpg",
+      "/pic/3.jpg",
+      "/pic/4.jpg",
+      "/pic/5.jpg",
+      "/pic/6.jpg",
+    ];
+    this.handleOnClickThumb = this.handleOnClickThumb.bind(this);
   }
 
-  componentDidMount(){
-    let thumbImg = document.querySelectorAll('.thumb-img .pic img');
-    thumbImg.forEach((item) => {
-      item.addEventListener('click', (ev) => {
-        this.setState({ path: ev.target.src })
-      })
-    })
+  handleOnClickThumb(e) {
+    this.thumbShow.current.src = e.target.src;
   }
 
-  render(){
+  componentDidMount() {}
+
+  render() {
     const { path } = this.state;
 
     return (
       <div className="container">
         <div className="left">
-          <ThumbImg path={'/pic/1.jpg'} />
-          <ThumbImg path={'/pic/2.jpg'} />
-          <ThumbImg path={'/pic/3.jpg'} />
+          {this.images.slice(0, 3).map((item, index) => (
+            <ThumbImg
+              key={index}
+              onClick={this.handleOnClickThumb}
+              path={item}
+            />
+          ))}
         </div>
         <div className="center">
           <div className="show-img">
             <div className="pic">
-              <img src={path} alt="" />
+              <img ref={this.thumbShow} src={path} alt="" />
             </div>
           </div>
         </div>
         <div className="right">
-          <ThumbImg path={'/pic/4.jpg'} />
-          <ThumbImg path={'/pic/5.jpg'} />
-          <ThumbImg path={'/pic/6.jpg'} />
+          {this.images.slice(3, 6).map((item, index) => (
+            <ThumbImg
+              key={index}
+              onClick={this.handleOnClickThumb}
+              path={item}
+            />
+          ))}
         </div>
       </div>
     );
